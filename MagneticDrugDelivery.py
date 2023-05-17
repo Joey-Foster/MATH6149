@@ -49,6 +49,7 @@ plt.figure(1)
 y_0s = pdf.rvs(size=N)
 t = np.linspace(0,20,5000)
 for y_0 in y_0s[::N//20]:
+    # maxIndex code to stop trajectories at the upper wall written by Sam
     xVals = x(t,y_0)
     yVals = y(t,y_0)
     try :
